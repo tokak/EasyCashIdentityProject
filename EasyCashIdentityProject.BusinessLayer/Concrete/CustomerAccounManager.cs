@@ -42,5 +42,10 @@ namespace EasyCashIdentityProject.BusinessLayer.Concrete
         {
             _customerAccountDal.Update(t);
         }
+
+        public List<CustomerAccount> TGetCustomerAccountList(int id)
+        {
+            return _customerAccountDal.GetCustomerAccountList(id);
+        }
     }
 }

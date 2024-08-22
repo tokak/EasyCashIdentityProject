@@ -14,7 +14,11 @@ namespace EasyCashIdentityProject.EntityLayer.Concrete
         public decimal Amount { get; set; }
         public DateTime ProcessDate { get; set; }
         //Gönderici ve alıcı
-
+        public int? SenderID { get; set; }
+        public int? ReceiverID { get; set; }
+        public CustomerAccount SenderCustomer { get; set; }
+        public CustomerAccount ReceiverCustomer { get; set; }
+        public string Description { get; set; }
 
     }
 }
